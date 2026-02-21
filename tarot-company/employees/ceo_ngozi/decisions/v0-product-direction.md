@@ -137,17 +137,13 @@ This prevents Barnum collapse. "Exactly one" is deliberate — multiple anchors 
 
 ---
 
-## 10. Open Foundational Question — Not Resolved
+## 10. User Feedback on Card Selection — Resolved 2026-02-21
 
 If structural geometry selects a card that is technically correct, but users consistently report it "doesn't feel right":
 
-We must decide whether to adjust:
-- Geometry weights
-- Interpretation voice
-- Ontology itself
-- Or privilege structural correctness over subjective feel
+**Decision:** Collect the signal, store it, find patterns later. Do not act on individual feedback in real time.
 
-This is the next philosophical fork. It will surface after the first friend pilot in relaxed mode. No decision now.
+See `user-feedback-storage.md` for the full decision record, data model, and telemetry event spec.
 
 ---
 
