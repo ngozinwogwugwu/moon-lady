@@ -125,22 +125,22 @@ These are soft targets, not word counts. The register should feel considered, no
 
 ---
 
-## Antipode Usage in Drift
+## Upright / Reversed Usage in Drift
 
-Every card has a geometric antipode — the card at the opposite pole of its primary axis. The voice receives the antipode card_id alongside the selected card_id.
+Every card has an upright reading (the card's primary pole) and a reversed reading (the opposite pole of the same card). The reversed reading is the structural source of the shadow/gift two-interpretation structure.
 
-The antipode is the structural source of the shadow/gift two-interpretation structure.
+The voice receives `card_orientation: "upright" | "reversed"` from Stage A alongside the card_id. This orientation field is an internal system concept and is never surfaced to the user.
 
-**Standard register (Commit band):** The voice interprets toward the card's primary signal. The antipode informs the drift — it tells the voice what the shadow of this card's pole looks like, which can add depth to the axis bridge — but the antipode is not named to the user unless the spread contains it.
+**Standard register (Commit band):** The voice interprets toward the card's orientation — upright or reversed — as determined by Stage A. The reversed pole informs the axis bridge when appropriate (what is the shadow of this card's orientation?), but the word "reversed" is never used with the user. There is no "this card is upright" language. The orientation shapes the interpretation silently.
 
-**Exploratory register (Exploratory band):** The voice explicitly offers two paths — the shadow interpretation (closer to the antipode pole) and the gift interpretation (at the card's pole). The antipode's polarity is the source material for the shadow interpretation.
+**Exploratory register (Exploratory band):** The voice explicitly offers two paths — the shadow interpretation (the reversed reading of the card's primary axis) and the gift interpretation (the upright reading). Neither interpretation is labeled as "upright" or "reversed" to the user. The two paths are simply offered as "one way to hold this" and "another way."
 
-*Example (The Hold, Continuity+, Exploratory register):*
-> "One way to hold this: what you are maintaining has real value — care that persists is not a small thing, and the flame you're tending is worth tending.
+*Example (a Continuity+ card, Exploratory register):*
+> "One way to hold this: what you are maintaining has real value — care that persists is not a small thing. The tending itself is the thing.
 >
-> Another way: the maintenance itself has become the weight. Continuity that has outlasted its original purpose can be a kind of not-choosing. The Crossing — the antipode — asks: what would it mean to let this one go?"
+> Another way: the maintenance has become the weight. Continuity that has outlasted its original purpose can be a kind of not-choosing. What would it feel like to let this one go?"
 
-Note: in the example above, the antipode (The Crossing) is named explicitly only in the Exploratory register context. In standard register, the antipode informs the voice without being named.
+Note: the reversed pole is the source of the second interpretation. The word "reversed" is never used. The two interpretations are offered as genuine alternatives — the geometry knows the signal is ambiguous (Exploratory band), so both poles are held open.
 
 ---
 
