@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Google Fonts — Cormorant Garamond (display) + IM Fell English (body) */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=IM+Fell+English:ital@0;1&display=swap');
+
+/* Design tokens */
+:root {
+  --c-bg:     #F7F3EE;
+  --c-text:   #1C1917;
+  --c-accent: #9C8063;
+}
+
+/* Base */
+html, body {
+  background-color: var(--c-bg);
+  color: var(--c-text);
+  font-family: 'IM Fell English', serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Breathing ring — SUKI-006 */
+@keyframes breathe {
+  0%, 100% {
+    transform: scale(0.96);
+    opacity: 0.45;
+  }
+  50% {
+    transform: scale(1.04);
+    opacity: 0.85;
+  }
+}
+
+.breathing-ring {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid var(--c-accent);
+  animation: breathe 8s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+/* State label crossfade — SUKI-006 */
+.crossfade {
+  transition: opacity 200ms ease;
+}
+.crossfade-hidden {
+  opacity: 0;
+}
+
+/* Waveform bars — SUKI-004 */
+.waveform-bar {
+  width: 3px;
+  background-color: var(--c-accent);
+  border-radius: 2px;
+  transition: height 50ms ease;
+}
+
+/* Button primitives — SUKI-001 */
+.btn-primary {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  color: var(--c-text);
+  background: transparent;
+  border: 1px solid var(--c-accent);
+  padding: 8px 20px;
+  width: 100%;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.btn-ghost {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 0.875rem;
+  color: var(--c-accent);
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Tabs — SUKI-008 */
+.tab {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--c-text);
+  border: none;
+  background: transparent;
+  padding: 4px 0;
+  margin-right: 24px;
+  cursor: pointer;
+}
+.tab.active {
+  font-weight: 500;
+  border-bottom: 1px solid var(--c-accent);
+}
+
+/* Record button — SUKI-004 */
+.record-btn {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid var(--c-accent);
+  background: transparent;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.record-btn.recording {
+  background-color: rgba(156, 128, 99, 0.1);
+}
+
+/* Card back (warm no abstain) — SUKI-011 */
+.card-back {
+  background-color: var(--c-accent);
+  opacity: 0.35;
+  border-radius: 2px;
+}
