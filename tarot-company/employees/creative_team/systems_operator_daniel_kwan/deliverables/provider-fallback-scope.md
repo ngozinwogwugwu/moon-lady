@@ -1,8 +1,10 @@
 # AI Provider Fallback Scope
 **Owner:** Daniel Kwan — Systems Operator
 **Sprint:** 001 / Task D-2
-**Status:** Complete
+**Status:** Complete — deprioritized to post-V0 per CEO direction (2026-02-21)
 **Feeds:** Infrastructure Lead, Head of Product
+
+> **Note:** The CEO reviewed this memo and confirmed that provider fallback is not a V0 requirement. The product team should build the provider abstraction layer (so swapping is possible), but multi-provider fallback tiers and self-hosted model evaluation are post-V0 work. This document stands as the post-V0 scope reference.
 
 ---
 

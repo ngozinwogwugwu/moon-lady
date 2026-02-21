@@ -1,7 +1,7 @@
 # Infrastructure Risk Memo
 **Owner:** Daniel Kwan — Systems Operator
 **Sprint:** 001 / Task D-1
-**Status:** Complete
+**Status:** Updated — CEO decisions 2026-02-21 (Arcana Gate tiering, Stage B transcript isolation)
 **Feeds:** Infrastructure Lead, Data & Privacy Lead, Head of Product
 
 ---
@@ -10,9 +10,9 @@
 
 The pipeline is two stages with a deterministic contract between them.
 
-**Stage A — Feature Extraction:** Receives a normalized transcript. Extracts a polarity feature vector across six axes (S, C, X, O, L, A), detects the dominant domain bucket, applies weighted cosine similarity against the card catalog, applies the Arcana Gate (MajorScore), and returns a fully specified spread: three cards with IDs, orientations (upright/reversed), MatchScore per card, and spread shape (coherent/tensioned).
+**Stage A — Feature Extraction:** Receives a normalized transcript. Extracts a polarity feature vector across six axes (S, C, X, O, L, A), detects the dominant domain bucket, applies weighted cosine similarity against the card catalog, applies the tiered Arcana Gate (MajorScore per card — three tiers: ≥0.70, ≥0.83, ≥0.92), and returns a fully specified spread: three cards with IDs, orientations (upright/reversed), MatchScore band per card, Major tier count, and spread shape (coherent/tensioned).
 
-**Stage B — Interpretation Generation:** Receives the Stage A output JSON. Generates a P/P/F three-card reading in the voice registered to Amara's spec. Returns rendered interpretation text.
+**Stage B — Interpretation Generation:** Receives the spread contract only — card IDs, orientations, MatchScore bands, and spread shape. **Stage B does not receive the transcript, the feature vector, or any other Stage A artifact.** Generates a P/P/F three-card reading in the voice registered to Amara's spec. Returns rendered interpretation text.
 
 **Application Layer:** Enforces scarcity, manages sessions, stores outputs, logs telemetry.
 
@@ -83,20 +83,38 @@ The deterministic contract between Stage A and the application layer, and betwee
     },
     "domain_detected": "foundation | motion | interior | relation | threshold | none",
     "spread_shape": "coherent | tensioned",
+    "major_tier": "0 | 1 | 2 | 3",
     "cards": [
       {
         "position": "past | present | future",
         "card_id": "string (e.g., 'the_emperor')",
         "card_name": "string (e.g., 'The Emperor')",
         "card_orientation": "upright | reversed",
-        "matchscore": "float (0.0 to 1.0)",
+        "majorscore": "float (0.0 to 1.0, intensity on primary axis)",
+        "matchscore": "float (0.0 to 1.0, polarity match confidence)",
         "matchscore_band": "commit | exploratory | abstain",
         "second_best_card_id": "string",
         "margin_score": "float"
       }
     ],
-    "arcana_gate_passed": "boolean",
     "status": "ok | needs_more_input"
+  },
+
+  "stage_b_input": {
+    "NOTE": "Stage B receives ONLY this subset — no transcript, no feature vector, no raw scores",
+    "spread_shape": "coherent | tensioned",
+    "major_tier": "0 | 1 | 2 | 3",
+    "cards": [
+      {
+        "position": "past | present | future",
+        "card_id": "string",
+        "card_name": "string",
+        "card_orientation": "upright | reversed",
+        "matchscore_band": "commit | exploratory | abstain"
+      }
+    ],
+    "scarcity_mode": "strict | relaxed",
+    "ontology_version_id": "string"
   },
 
   "stage_b_output": {
