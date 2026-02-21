@@ -1,16 +1,18 @@
-# MajorScore Threshold Proposal
+# MatchScore Threshold Proposal
 **Owner:** Ilya Moreau — Symbol Architect
 **Sprint:** 001 / Task I-4
-**Status:** Complete
+**Status:** Updated — renamed per CEO ontology-revision.md (2026-02-21)
 **Feeds:** ML Product Lead (calibration workflow)
+
+> **Rename note:** This metric was previously called MatchScore. Per CEO direction, "MatchScore" now refers to the intensity threshold that gates Major Arcana eligibility (the Arcana Gate). The polarity match confidence metric is now called **MatchScore**. All references below have been updated.
 
 ---
 
-## What MajorScore Measures
+## What MatchScore Measures
 
-MajorScore is Stage A's confidence that a selected card's polarity position genuinely corresponds to a dominant signal in the user's transcript. It is not a measure of how "meaningful" a reading is — it is a measure of how clearly the transcript maps onto the selected card's region of polarity space.
+MatchScore is Stage A's confidence that a selected card's polarity position genuinely corresponds to a dominant signal in the user's transcript. It is not a measure of how "meaningful" a reading is — it is a measure of how clearly the transcript maps onto the selected card's region of polarity space.
 
-A high MajorScore means: the transcript has a clear, consistent signal that points toward this card's primary axis and pole. A low MajorScore means: the signal is weak, mixed, or ambiguous — the card is the best match but not a strong one.
+A high MatchScore means: the transcript has a clear, consistent signal that points toward this card's primary axis and pole. A low MatchScore means: the signal is weak, mixed, or ambiguous — the card is the best match but not a strong one.
 
 ---
 
@@ -58,7 +60,7 @@ For a three-card spread, threshold is applied per card, not per spread.
 
 **Added per CEO direction (2026-02-21).**
 
-MajorScore computation must be deterministic. Same transcript → same MajorScore → same band assignment → same behavioral output.
+MatchScore computation must be deterministic. Same transcript → same MatchScore → same band assignment → same behavioral output.
 
 This means:
 - Stage A feature extraction must be deterministic (no stochastic sampling, no randomized tie-breaking).

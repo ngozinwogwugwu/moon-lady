@@ -97,7 +97,7 @@ These are illustrative transcripts with proposed labels. They are not golden tes
 
 *Transcript:* "I keep trying to plan everything and it's not working. Every time I think I know what's coming next, something changes. I'm exhausted from trying to control things I can't see coming."
 
-*Selected card:* The Veil (Primary: Obscurity−, Bucket: Threshold)
+*Selected card:* The Moon (Primary: Obscurity−, Bucket: Threshold)
 *Position:* Present
 
 | Component | Score | Notes |
@@ -114,7 +114,7 @@ Label: **Appropriate** (Axis Alignment = 2, Arcana type confirmed)
 
 *Transcript:* "Today was good actually. Work went fine. I talked to my sister which was nice. I'm feeling pretty settled."
 
-*Selected card:* The Break (Primary: Rupture−, Bucket: Threshold)
+*Selected card:* The Tower (Primary: Rupture−, Bucket: Threshold)
 *Position:* Past
 
 | Component | Score | Notes |
@@ -131,7 +131,7 @@ Label: **Inappropriate**
 
 *Transcript:* "I've been thinking a lot about what I actually want, which I don't usually let myself do. It's a bit uncomfortable. I'm not sure what I'm going to find when I keep going with it."
 
-*Selected card:* The Turn (Primary: Self+ / slight Rupture−, Bucket: Interior)
+*Selected card:* Page of Cups (Primary: Self+ / slight Rupture−, Bucket: Interior)
 *Position:* Present
 
 | Component | Score | Notes |

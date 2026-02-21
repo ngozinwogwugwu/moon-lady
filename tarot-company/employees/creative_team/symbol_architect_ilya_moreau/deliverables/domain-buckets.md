@@ -45,12 +45,12 @@ Coordinates run −1.0 to +1.0 on each axis. Major Arcana occupy extreme positio
 **Design rationale:** Every reading may involve a Foundation card — what the person is standing on, whether they know it or not. These cards are never dramatic; they are what is quietly true. The bucket needs one Major at the extreme and Minors that cover different expressions of groundedness (what is maintained, what is assessed, what is rooted).
 
 **Cards assigned:** 4 (1 Major, 3 Minor)
-- The Root (Major)
-- The Hold (Minor)
-- The Ground (Minor)
-- The Measure (Minor)
+- The Emperor (Major)
+- Ten of Pentacles (Minor)
+- Four of Pentacles (Minor)
+- Ace of Swords (Minor)
 
-**Clustering check:** The Root is at extreme Stability+. The Hold is dominant on Continuity+. The Ground is dominant on Stability mid with inward tilt. The Measure is dominant on Clarity+ with slight stability. All four occupy different sub-regions of the Foundation space.
+**Clustering check:** The Emperor is at extreme Stability+. Ten of Pentacles is dominant on Continuity+. Four of Pentacles is dominant on Stability mid with inward tilt. Ace of Swords is dominant on Clarity+ with slight stability. All four occupy different sub-regions of the Foundation space.
 
 ---
 
@@ -64,12 +64,12 @@ Coordinates run −1.0 to +1.0 on each axis. Major Arcana occupy extreme positio
 **Design rationale:** Motion cards are about doing — not transformation (that's Threshold) but directed movement. The bucket needs a Major at the extreme of Action and Minors that distinguish between beginning to move, accelerating, and correcting course. These are among the most legible cards; the voice must work against literalism.
 
 **Cards assigned:** 4 (1 Major, 3 Minor)
-- The Current (Major)
-- The Step (Minor)
-- The Swerve (Minor)
-- The Surge (Minor)
+- The Chariot (Major)
+- Ace of Wands (Minor)
+- Knight of Wands (Minor)
+- Three of Wands (Minor)
 
-**Clustering check:** The Current is at extreme Action+. The Step is early-stage action, slight expansion. The Swerve is mid-volatility with action maintained. The Surge is high-action with strong expansion. Geometrically distinct across the S and X axes.
+**Clustering check:** The Chariot is at extreme Action+. Ace of Wands is early-stage action, slight expansion. Knight of Wands is mid-volatility with action maintained. Three of Wands is high-action with strong expansion. Geometrically distinct across the S and X axes.
 
 ---
 
@@ -83,12 +83,12 @@ Coordinates run −1.0 to +1.0 on each axis. Major Arcana occupy extreme positio
 **Design rationale:** Interior is the core of the system. These cards address the relationship a person has with their own inner life — how they observe themselves, where they are unclear, when they turn. The bucket needs a Major at the extreme of inwardness and Minors that cover distinct inner experiences. Cross-session note: Amara confirmed that V0 is primarily about interiority; these cards carry the most interpretive weight.
 
 **Cards assigned:** 4 (1 Major, 3 Minor)
-- The Mirror (Major)
-- The Witness (Minor)
-- The Haze (Minor)
-- The Turn (Minor)
+- The High Priestess (Major)
+- Four of Cups (Minor)
+- Seven of Cups (Minor)
+- Page of Cups (Minor)
 
-**Clustering check:** The Mirror is at extreme Contraction/Self. The Witness is mid-Self with contained observation. The Haze is mid-Obscurity with inward tilt. The Turn is mid-Self with slight Rupture signal. The Witness and the Turn are in the same quadrant (Self, inward) but the Turn's Rupture signal and the Witness's Stability signal separate them meaningfully.
+**Clustering check:** The High Priestess is at extreme Contraction/Self. Four of Cups is mid-Self with contained observation. Seven of Cups is mid-Obscurity with inward tilt. Page of Cups is mid-Self with slight Rupture signal. Four of Cups and Page of Cups are in the same quadrant (Self, inward) but Page of Cups's Rupture signal and Four of Cups's Stability signal separate them meaningfully.
 
 ---
 
@@ -102,11 +102,11 @@ Coordinates run −1.0 to +1.0 on each axis. Major Arcana occupy extreme positio
 **Design rationale:** Relation cards address the membrane between self and world — not external events but the relational field. Smaller bucket because V0 is interiority-first; the Relation cards provide context rather than primary interpretation. Post-V0 expansion should grow this bucket first.
 
 **Cards assigned:** 3 (1 Major, 2 Minor)
-- The Weave (Major)
-- The Bridge (Minor)
-- The Echo (Minor)
+- The Lovers (Major)
+- Two of Cups (Minor)
+- Six of Cups (Minor)
 
-**Clustering check:** The Weave is at extreme Other/Expansion. The Bridge is mid-Other, mid-Expansion, active. The Echo is mid-Other but slight Contraction — it receives rather than reaches. The Contraction signal distinguishes The Echo clearly from the other two.
+**Clustering check:** The Lovers is at extreme Other/Expansion. Two of Cups is mid-Other, mid-Expansion, active. Six of Cups is mid-Other but slight Contraction — it receives rather than reaches. The Contraction signal distinguishes Six of Cups clearly from the other two.
 
 ---
 
@@ -120,11 +120,11 @@ Coordinates run −1.0 to +1.0 on each axis. Major Arcana occupy extreme positio
 **Design rationale:** Threshold cards are the most archetypal in the system. They sit at the extremes of Rupture and Obscurity — the two axes most associated with what cannot be controlled or known. Two Majors are appropriate here because the threshold experience is both break and veil; the Minor covers the active passage between them. These cards require the most restraint from the voice.
 
 **Cards assigned:** 3 (2 Major, 1 Minor)
-- The Break (Major)
-- The Veil (Major)
-- The Crossing (Minor)
+- The Tower (Major)
+- The Moon (Major)
+- Six of Swords (Minor)
 
-**Clustering check:** The Break is extreme Rupture. The Veil is extreme Obscurity. The Crossing is mid-Rupture with Volatility — it sits between the two Majors geometrically and thematically. Distinct.
+**Clustering check:** The Tower is extreme Rupture. The Moon is extreme Obscurity. Six of Swords is mid-Rupture with Volatility — it sits between the two Majors geometrically and thematically. Distinct.
 
 ---
 
@@ -143,6 +143,6 @@ Coordinates run −1.0 to +1.0 on each axis. Major Arcana occupy extreme positio
 
 ## Notes for Dispersion Map
 
-- Each card's primary axis assignment comes from this document. The dispersion map adds coordinates, keywords, anchors, and antipodes.
+- Each card's primary axis assignment comes from this document. The dispersion map adds coordinates, keywords, anchors, and upright/reversed pairs.
 - The Relation bucket is intentionally smaller in V0. The architecture supports expansion.
-- The Threshold bucket has two Majors by design — The Break and The Veil represent distinct aspects of threshold experience (the break is structural; the veil is epistemic). They should not be consolidated.
+- The Threshold bucket has two Majors by design — The Tower and The Moon represent distinct aspects of threshold experience (The Tower is structural rupture; The Moon is epistemic obscurity). They should not be consolidated.

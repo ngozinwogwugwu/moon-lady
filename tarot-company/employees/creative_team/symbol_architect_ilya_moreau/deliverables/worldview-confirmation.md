@@ -43,10 +43,10 @@ The geometry holds all six axes. The interiority-first worldview is about where 
 - This is correct. It means transcripts that don't have strong relational or action signals still produce meaningful card selections.
 
 **Major Arcana placement reflects interiority-first:**
-- Of the six Majors, two are interior-dominant (The Mirror: Contraction/Self; The Veil: Obscurity)
-- Two are threshold-dominant (The Root: Stability; The Break: Rupture)
-- One is motion-dominant (The Current: Action)
-- One is relational (The Weave: Other/Expansion)
+- Of the six Majors, two are interior-dominant (The High Priestess: Contraction/Self; The Moon: Obscurity)
+- Two are threshold-dominant (The Emperor: Stability; The Tower: Rupture)
+- One is motion-dominant (The Chariot: Action)
+- One is relational (The Lovers: Other/Expansion)
 - The interior axis is the only one with two Majors in its core register. This is intentional.
 
 ---
@@ -55,7 +55,7 @@ The geometry holds all six axes. The interiority-first worldview is about where 
 
 *Flagged for Amara:*
 
-The interiority-first worldview means that even when a Relation card is selected (The Bridge, The Echo, The Weave), the voice should interpret it from the inside out. "Here is what this connection means *to you*" — not "here is what the other person is like." The system reads the person, not the situation.
+The interiority-first worldview means that even when a Relation card is selected (Two of Cups, Six of Cups, The Lovers), the voice should interpret it from the inside out. "Here is what this connection means *to you*" — not "here is what the other person is like." The system reads the person, not the situation.
 
 This is a significant voice constraint: relational cards do not get interpreted as analysis of other people. They are read as the user's experience of being in relation.
 
@@ -65,7 +65,7 @@ This is a significant voice constraint: relational cards do not get interpreted 
 
 - **Post-V0 expansion** can shift the balance. If evidence from live testing shows users consistently bring relational transcripts and find the readings insufficient, the Relation bucket can grow and the O/A weights can be revised.
 - **Expanded readings** (post-V0) might have a different orientation — more situational, more outward-facing, a different frame than P/P/F. The interiority-first constraint applies to V0's daily reading format, not to the system as a whole.
-- **The relational Majors (The Weave) and threshold Majors (The Break)** can still produce powerful readings. The interiority-first posture shapes *how* they are interpreted, not whether they appear.
+- **The relational Major (The Lovers) and threshold Majors (The Tower, The Moon)** can still produce powerful readings. The interiority-first posture shapes *how* they are interpreted, not whether they appear.
 
 ---
 

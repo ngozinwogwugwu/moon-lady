@@ -135,10 +135,10 @@ The voice receives `card_orientation: "upright" | "reversed"` from Stage A along
 
 **Exploratory register (Exploratory band):** The voice explicitly offers two paths — the shadow interpretation (the reversed reading of the card's primary axis) and the gift interpretation (the upright reading). Neither interpretation is labeled as "upright" or "reversed" to the user. The two paths are simply offered as "one way to hold this" and "another way."
 
-*Example (a Continuity+ card, Exploratory register):*
-> "One way to hold this: what you are maintaining has real value — care that persists is not a small thing. The tending itself is the thing.
+*Example (Ten of Pentacles, Continuity+, Exploratory register):*
+> "One way to hold this: what you are maintaining has real value — the pattern that persists is not nothing. The family under the archway has been there a long time. Continuity of care is the thing.
 >
-> Another way: the maintenance has become the weight. Continuity that has outlasted its original purpose can be a kind of not-choosing. What would it feel like to let this one go?"
+> Another way: the pattern has become the weight. The archway is overhead whether you chose it or not. Continuity that has outlasted its original purpose can be a kind of not-choosing. What would it feel like to step out from under the arch?"
 
 Note: the reversed pole is the source of the second interpretation. The word "reversed" is never used. The two interpretations are offered as genuine alternatives — the geometry knows the signal is ambiguous (Exploratory band), so both poles are held open.
 
