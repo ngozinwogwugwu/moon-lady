@@ -98,7 +98,7 @@ async function runSessionPipeline(params: {
       priorCardIds,
     })
 
-    if (result.reason === 'needs_more_input') {
+    if ('reason' in result && result.reason === 'needs_more_input') {
       // Warm no — Abstain
       await db
         .update(sessions)
