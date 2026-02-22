@@ -1,7 +1,7 @@
 'use client'
 // THEO-004: Home screen
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { getLastSessionId } from '@/lib/device'
 import type { ReadingObject } from '@/lib/types'
 
@@ -12,7 +12,11 @@ interface Props {
 
 export default function HomeScreen({ onRecord, onLastReading }: Props) {
   const [showWhat, setShowWhat] = useState(false)
-  const lastSessionId = getLastSessionId()
+  const [lastSessionId, setLastSessionId] = useState<string | null>(null)
+
+  useEffect(() => {
+    setLastSessionId(getLastSessionId())
+  }, [])
 
   function handleLastReading() {
     const stored = typeof window !== 'undefined'

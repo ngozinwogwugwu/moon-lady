@@ -49,7 +49,7 @@ async function attempt(
   const start = Date.now()
 
   const params: Anthropic.MessageCreateParamsNonStreaming = {
-    model: 'claude-sonnet-4-5-20251001',
+    model: 'claude-sonnet-4-6',
     max_tokens: config.maxTokens,
     temperature: TEMPERATURE, // hardcoded — not derived from config
     system: systemPrompt,
@@ -119,7 +119,7 @@ async function attempt(
 }
 
 function isRetryable(err: unknown): boolean {
-  if (err instanceof Anthropic.APIStatusError) {
+  if (err instanceof Anthropic.APIError) {
     return err.status === 429 || err.status >= 500
   }
   if (err instanceof Error) {

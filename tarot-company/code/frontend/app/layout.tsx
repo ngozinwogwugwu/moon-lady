@@ -6,7 +6,6 @@ export const metadata: Metadata = {
   description: 'A voice memo becomes a tarot reading.',
   manifest: '/manifest.json',
   appleWebApp: {
-    capable: true,
     statusBarStyle: 'default',
     title: 'Moon Lady',
   },

@@ -9,12 +9,6 @@ import { buildCacheKey, lookupCache, withCacheLock, storeCache } from './stage-b
 import { CARD_BY_ID } from './card-catalog.js'
 import type { FeatureVector, SelectedCard, ReadingCard, ReadingObject, WarmNoObject } from '../types.js'
 
-// ---- Stage A prompt (from Priya's deliverable: stage-a-prompt.md) ----
-// Full text omitted for brevity — loaded from STAGE_A_SYSTEM_PROMPT env var in production,
-// or substitute directly from pipeline-contract.md.
-const STAGE_A_SYSTEM_PROMPT = process.env.STAGE_A_PROMPT ?? DEFAULT_STAGE_A_PROMPT
-const STAGE_B_SYSTEM_PROMPT = process.env.STAGE_B_PROMPT ?? DEFAULT_STAGE_B_PROMPT
-
 const STAGE_A_TOOL: Anthropic.Tool = {
   name: 'extract_polarity_features',
   description: 'Extract a six-axis polarity feature vector from a spoken reflection transcript',
@@ -51,13 +45,13 @@ export async function runStageA(
 ): Promise<{ featureVector: FeatureVector; latencyMs: number }> {
   const result = await complete(STAGE_A_SYSTEM_PROMPT, transcript, {
     maxTokens: 500,
-    timeoutMs: 4000,
+    timeoutMs: 15000,
     tools: [STAGE_A_TOOL],
     toolChoice: { type: 'tool', name: 'extract_polarity_features' },
   })
 
   if (!result.ok) {
-    throw new StageAError(`Stage A failed: ${result.error}`)
+    throw new StageAError(`Stage A failed: ${result.error}${result.message ? ` — ${result.message}` : ''}`)
   }
 
   const toolUse = result.content.find((b): b is Anthropic.ToolUseBlock => b.type === 'tool_use')
@@ -197,10 +191,10 @@ export async function runStageBForCard(
     const spreadContract = buildSpreadContract(allCards, spreadShape, majorTier, matchscoreMode)
     const result = await complete(STAGE_B_SYSTEM_PROMPT, JSON.stringify(spreadContract), {
       maxTokens: 1200,
-      timeoutMs: 9000,
+      timeoutMs: 30000,
     })
 
-    if (!result.ok) throw new StageBError(`Stage B failed: ${result.error}`)
+    if (!result.ok) throw new StageBError(`Stage B failed: ${result.error}${result.message ? ` — ${result.message}` : ''}`)
 
     const rawText = result.content.find((b): b is Anthropic.TextBlock => b.type === 'text')?.text
     if (!rawText) throw new StageBError('Stage B: no text content')
@@ -450,3 +444,7 @@ Something here is asking to be left alone. Not from numbness — from a kind of 
 </example-interpretation>
 
 Now produce the reading for the spread provided in the user message.`
+
+// ---- Active prompt constants — must be after defaults (const TDZ) ----
+const STAGE_A_SYSTEM_PROMPT = process.env.STAGE_A_PROMPT ?? DEFAULT_STAGE_A_PROMPT
+const STAGE_B_SYSTEM_PROMPT = process.env.STAGE_B_PROMPT ?? DEFAULT_STAGE_B_PROMPT
